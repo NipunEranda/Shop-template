@@ -1,0 +1,22 @@
+[build]
+  functions = "functions"
+
+[[redirects]]
+  from = "/api/v1/auth/*"
+  to = "/.netlify/functions/auth"
+  status = 200
+
+[[redirects]]
+  from = "/api/v1/user/*"
+  to = "/.netlify/functions/user"
+  status = 200
+
+[[redirects]]
+  from = "/api/v1/marks/*"
+  to = "/.netlify/functions/marks"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
